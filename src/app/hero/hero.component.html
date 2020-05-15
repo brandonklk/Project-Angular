@@ -1,0 +1,43 @@
+<div class="profile-container">
+    <header>
+        <img src='../../assets/logo.svg' alt="Hero"/>
+        <span>Bem vindo</span>
+
+        <a type="button" class="button" (click)="registerNewHero()">Cadastrar novo herói</a>
+        <button (click)="disconnects()" type="button">
+            <p>Sair</p>
+        </button>
+        
+    </header>
+
+    <h1>Herois criados</h1>
+    
+        <div class="data-empty" *ngIf="dataEmpty">
+            Nenhum valor para ser exibido.
+        </div>
+
+        <ul>
+
+            <li *ngFor="let heros of hero">
+                <strong>Nome do herói:</strong>
+                <p>{{ heros.Name }}</p>
+            
+                <strong>Descrição do herói:</strong>
+                <p>{{ heros.Description }}</p>
+            
+                <strong>Poder do super herói:</strong>
+                <p>{{ heros.Power }}</p>
+            
+                <button (click)="removeHero(heros.id)" type="button">
+                    Deletar
+                </button>
+                            
+            </li>
+    
+        </ul>
+
+        
+    
+    
+
+</div>

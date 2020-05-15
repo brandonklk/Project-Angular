@@ -1,0 +1,45 @@
+<div class="new-hero-container">
+    <div class="content">
+        <section>
+            <img src="../../assets/logo.svg" alt="Be The Hero"/>
+
+            <h1>Cadastro Novo Herói</h1>
+            <p>Descreva o herói detalhadamente para ser criado.</p>
+
+            <a class="back-link">
+                <a type="button" (click)="backHome()" color="#E02041">Voltar para home</a>
+            </a>
+        </section>
+
+        <form (submit)="createHero()" [formGroup]="heroForm" >
+            <input 
+                placeholder="Nome do heroi"
+                formControlName="nameHero"
+            />
+            <div class="validation-error" *ngIf="nameHero.invalid && (nameHero.dirty || nameHero.touched)">
+                Campo obrigatório
+            </div>
+            
+
+            <textarea 
+                placeholder="Descrição do heroi"
+                formControlName="descriptionHero"
+            ></textarea>
+            <div class="validation-error" *ngIf="descriptionHero.invalid && (descriptionHero.dirty || descriptionHero.touched)">
+                Campo obrigatório
+            </div>
+
+            <input 
+                type="text"
+                placeholder="Poder do herói"
+                formControlName="powerHero"
+            />
+            <div class="validation-error" *ngIf="powerHero.invalid && (powerHero.dirty || powerHero.touched)">
+                Campo obrigatório
+            </div>
+            
+
+            <button [disabled]="!heroForm.valid" class="button">Cadastrar</button>
+        </form>
+    </div>
+</div>
