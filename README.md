@@ -4,7 +4,7 @@ Projeto criado na versão 9.1.4 do Angular.
 
 ## Author
 
-Brandon Marcos Kluck [GitHub] (https://github.com/brandonklk).
+Brandon Marcos Kluck [GitHub](https://github.com/brandonklk).
 
 ## Development server
 
@@ -21,9 +21,9 @@ Execute `ng build` para criar o projeto. Os artefatos de construção serão arm
 
 ## Running unit tests
 
-Execute o `ng test` para executar os testes de unidade via [Karma] (https://karma-runner.github.io).
+Execute o `ng test` para executar os testes de unidade via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
-Execute `ng e2e` para executar os testes de ponta a ponta através do [Protractor] (http://www.protractortest.org/).
+Execute `ng e2e` para executar os testes de ponta a ponta através do [Protractor](http://www.protractortest.org/).
 
